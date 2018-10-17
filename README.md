@@ -18,11 +18,11 @@
     	Construção de arestas quando tiver mais de um vértice na tela, assim como criar quaisquer arestas subsequentes na criação de um novo vértice;  
     	Ao clicar num ponto (vértice) existente deve ser criado um polígono (fechado) com todas as arestas e voltar ao menu;  
   •	Criar função de seleção de polígonos (tanto pelas arestas, quanto pelos vértices e parte preenchidas pela criação do polígono); (Matheus)  
-  •	Criar função de rotação de polígonos; (Caio)  
-  •	Criar função de exclusão de polígonos; (Caio)  
-  •	Criar função de escala (mudança de tamanho) de polígonos; (Matheus)  
+  •	Criar função de rotação de polígonos; (Davi)  
+  •	Criar função de exclusão de polígonos; (Davi)  
+  •	Criar função de escala (mudança de tamanho) de polígonos; (Davi)  
   •	Criar função de troca de cores de um polígono; (Caio)  
-  •	Criar função de espelhamento de um polígono em relação ao eixo z; (Matheus)  
+  •	Criar função de espelhamento de um polígono em relação ao eixo z; (Davi)  
   •	Criar função de mover/excluir um vértice de um polígono, o polígono deve conectar o vértice anterior e o posterior em relação ao vértice excluído, caso seja uma alteração ao vértice deve ser alterado a posição do vértice tanto no polígono, quanto criação da nova aresta e alteração na estrutura de dados; (Matheus)  
   •	Criar menu permanente na tela (ele deve continuar na tela independente das ações a serem feitas na tela de polígonos. (Caio)  
 
