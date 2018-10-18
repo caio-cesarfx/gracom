@@ -32,6 +32,7 @@
   •	Leitura da documentação do PyOpenGL;   
   •	Definição dos responsáveis pelos módulos;  
   •	Definição da estrutura de dados utilizada (lista duplamente encadeada);  
+  	Leitura e escrita de arquivo;
 
 # Cronograma de desenvolvimento:
 
