@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CG - Trabalho VRML</title>
+<meta name="description" content="Trabalho 2 - Caio César">
+<meta name="author" content="Caio César">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+<!-- Slider
+    ================================================== -->
+<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+<link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Header -->
+<header id="header">
+  <div class="intro">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 intro-text">
+            <h1>Trabalho 2 Computação Gráfica</h1>
+            <p>VRML e o mercado de trabalho, a linguagem para fazer a WEB 3D e sua sucessora, X3D.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <div class="about-text">
+          <h2>Seção a. <span>Resumo</span></h2>
+          <hr>
+          <p>Desde a infância, ao vislumbrar o futuro dos quadrinhos e das animações, identificamos maior 
+			interação entre o homem e as máquinas ao seu redor, de modo que estas, em sua maior parte, 
+			facilitam o trabalho, reinventam o lazer e apresentam um novo paradigma. <br>
+			Nessas fantasias por vezes nos deparamos com momentos em que o indivíduo está inserido em uma 
+			realidade alternativa, paralela ao real de algum modo. A esse conceito chamamos Realidade Virtual.<br>
+			Realidade virtual é a tecnologia de interface entre o usuário e a interface gráfica cujo 
+			objetivo é simular um ambiente virtual diferente do real. </p>
+          <p>Atualmente, diversas áreas do entretenimento fazem uso desta tecnologia. 
+			Porém, esta tecnologia não se limita ao lazer. Existem diversas propostas e projetos que utilizam 
+			o VR para fins científicos, geográficos, militares, entre outros. <br>
+			Dentre estas propostas encontra-se a VRML e tudo que se originou a partir dela, 
+			como veremos neste trabalho.</p>
+          
+		  <h2>Seção b. <span>Introdução</span></h2>
+          <hr>
+			<p>No começo da modernização da internet, houve uma grande excitação com o que viria dali adiante. 
+			A comunicação já não era mais a mesma, as notícias já não chegavam da mesma forma e até mesmo 
+			o entretenimento estava mudando. Neste cenário nasceu o VRML (Virtual Reality Markup Language, 
+			posteriormente Virtual Reality Modeling Language), a proposta era fornecer aos programadores 
+			uma forma de desenvolver interação e visualização tridimensional em todos os navegadores de 
+			internet. Tamanha revolução permitiria, por exemplo, desenhar maquetes arquitetônicas tipo CAD, 
+			criar salas virtuais com interação entre usuários e com objetos tanto para propósitos 
+			comerciais quanto para jogos, animações, reconhecimento geográfico, entre outros.
+			<p>Porém, devido principalmente à insuficiência de hardware da época, era difícil garantir o 
+			pleno funcionamento da ferramenta gráfica e aos poucos o projeto foi descontinuado, 
+			para ressurgir posteriormente como X3D (Extensible 3D). <br>
+			O X3D é o VRML que deu certo. Completamente código-livre e reconhecido internacionalmente, 
+			surge como formato de arquivo e arquitetura de execução para representação e comunicação de 
+			cenas e objetos 3D, provê ainda de sistema de armazenamento, recuperação e exibição de cenas 
+			3D em múltiplas aplicações, em múltiplas plataformas.</p>
+			<p>Neste trabalho será apresentado uma definição do X3D, com exemplos e relatos profissionais.
+			Em seguida abordaremos as diversas formas como o X3D pode ser utilizado pelo mercado de trabalho 
+			e buscaremos, ainda, exemplos já existentes.
+			Por fim, tentaremos replicar o funcionamento de alguma dessas aplicações profissionais 
+			para somente então concluirmos o posicionamento acerca da tecnologia.</p>
+		<h2>Seção c. <span>Modelagem 3D</span></h2>
+		<hr>
+		<p> Os exemplos apresentados neste trabalho foram todos modelados utilizando-se X3D para modelagem tridimensional.</p>
+		<h2>Seção d. <span>VRML</span></h2>
+		<hr>
+		<h3> i. Considerações iniciais </h3>
+		<p> Na primeira edição da World Wide Web Conference, evento que tratava a respeito da internet, 
+		Dave Raggett apresentou ao mundo um artigo propondo realidade virtual em qualquer plataforma. 
+		Um ano depois, a TGS traz ao mundo a primeira versão do VRML. A linguagem gerou interesse e continuou sendo
+		testada e aprimorada, porém, haviam barreiras que a impediam de ganhar força no mercado.
+		Na época, poucos computadores tinham a capacidade de processar gráficos 3D e a internet discada 
+		não oferecia a largura de banda necessária para fazê-lo em tempo eficiente. O VRML fora, então, 
+		descontinuado, não se sabe ao certo quando.</p>
+		<p> O X3D, sucessor do VRML, foi criado após a "morte" do VRML para persistir na proposta antes 
+		apresentada, só que dessa vez, com melhores computadores e velocidade de internet. Este trabalho 
+		tem por propósito principal a utilização do VRML no mercado de trabalho e, para tanto, não será 
+		focado na linguagem descontinuada, mas na linguagem de mercado X3D. </p>
+		<h3> ii. Utilização no mundo </h3>
+	</div>
+  </div>
+</div>
+
+<!-- Services Section -->
+<div id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 text-center">
+        <div class="service-media"> <img src="img/heart.png" alt=" "> </div>
+        <div class="service-desc">
+          <h3>Corações impressos 3D para pré-operatório</h3>
+          <p>A maior parte dos cirurgiões utiliza imagens 2D como raio X e ultrassom para planejamento cirúrgico, 
+		  porém, é possível imprimir corações em 3D mais precisos e práticos, visando melhorar a decisão. A 
+		  impressão pode ser feita com diversos materiais e cores, adequando-se a cada caso. <br> A iniciativa foi 
+		  feita pelo Dr. Matthew Bramlet em Illinois, e suas modelagens foram feitas utilizando uma biblioteca 
+		  baseada no X3D.</p>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="service-media"> <img src="img/city.png" alt=" "> </div>
+        <div class="service-desc">
+          <h3>Construção automática de cidades 3D</h3>
+          <p>Maquetes de cidades costumam ser criadas a mão, de forma cara e demorada. Modelos 3D de alta 
+		  resolução podem ser criadas automaticamente e visualizadas online com o BS Contact GeoVRML/X3D. Essa 
+		  forma de representação, além de todos os custos removidos pela automatização, permite visualização 
+		  em múltiplas plataformas. </p>
+        </div>
+      </div>
+      <div class="col-md-3 text-center">
+        <div class="service-media"> <img src="img/game.png" alt=" "> </div>
+        <div class="service-desc">
+          <h3>Desenvolvimento de jogos</h3>
+          <p>Jogos do tipo MMO são conhecidos pelos mundos criados e a interação entre jogadores. A empresa 
+		  francesa 3dduo encontrou no X3D os requisitos que procuravam para criar um jogo do gênero que 
+		  funcionasse no navegador. A tecnologia disponibilizada pela Bitmanagement Software se chama 
+		  BS Contact e, além dos gráficos com o X3D, garante ainda a resposta em tempo real do jogo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-md-6">
+    <div class="about-text">
+      <h3> iii. Ambientes </h3>
+	  <p> O VRML, e por consequência, o X3D são tanto linguagens quanto formatos de arquivos, ou plugins, 
+	  e como tais, ainda não possuem IDE específica para sua produção. Entretanto, existe uma IDE chamada 
+	  X3D-Edit criada especificamente para o desenvolvimento e teste em X3D e VRML. </p>
+	  <h3> iv. A linguagem </h4>
+	  <p> A linguagem X3D é integrada à XML, portanto, é multi-plataforma e funcional por meio de tags. 
+	  É constantemente otimizada para diminuir o tempo de execução, permite extensão da página para demais 
+	  operações comerciais além da gráfica, possui conjuntos específicos para cada necessidade e é código 
+	  aberto. Seus pontos fortes contribuem atualmente para:</p>
+	  <ul>
+		<li><b>Gráficos 3D</b> - Geometria, transformações, luz e sombra, texturas...</li>
+		<li><b>Gráficos 2D</b> - Texto, vetores e planos, inclusive exibidos nas transformações 3D</li>
+		<li><b>Animação </b> - Temporizadores...</li>
+		<li><b>CAD </b> - Criação e manipulação de maquetes e modelos</li>
+		<li><b>Áudio e vídeo 3D</b> - Recursos visuais e auditivos mapeados pela cena</li>
+		<li><b>Interação</b> - Inputs com mouse e teclado...</li>
+		<li><b>Navegação</b> - Movimentação de câmeras, colisão, proximidade, visibilidade...</li>
+		<li><b>Simulações</b> - Utilização mais importante, representa a realidade por meio de experimentos 
+		no sistema. </li>
+	  </ul>
+	  <img src='img/nodes.png' align='right'>
+	  <p> Um arquivo X3D define uma cena. A cena é aquilo que é visualizado e com a qual interagimos. Uma 
+	  cena para o X3D é um grafo de cena, isso é, um modelo que define hierarquicamente a forma geométrica, 
+	  a aparência, posição e orientação, cor e etc. dos objetos. Os nós são a base da programação e suas 
+	  instâncias são os objetos visualizados em tela.</p>
+	  <p> A estrutura dos nós é intuitiva, ao abrir a tag cria-se o nó, nós abertos dentre deste nó são nós 
+	  "filhos". Ao fechar a tag, fecha-se o nó. </p>
+	  <p> O exemplo a seguir explicita a criação de figuras.</p>
+	  <pre>
+<code position: static>
+&ltshape&gt 
+&ltappearance&gt 
+&ltmaterial diffuseColor='1 0 0'&gt&lt/material&gt 
+&lt/appearance&gt 
+&ltbox&gt&lt/box&gt 
+&lt/shape&gt 
+&lttransform translation='-3 0 0'&gt 
+&ltshape&gt 
+  &ltappearance&gt 
+  &ltmaterial diffuseColor='0 1 0'&gt&lt/material&gt 
+  &lt/appearance&gt 
+  &ltcone&gt&lt/cone&gt 
+&lt/shape&gt 
+&lt/transform&gt 
+&lttransform translation='3 0 0'&gt 
+&ltshape&gt 
+  &ltappearance&gt 
+  &ltmaterial diffuseColor='0 0 1'&gt&lt/material&gt 
+  &lt/appearance&gt 
+  &ltsphere&gt&lt/sphere&gt 
+&lt/shape&gt 
+&lt/transform&gt 
+</code>
+		 </pre>
+		<p> O pedaço de código gera a seguinte tela: </p>
+		<img src='img\shapes.png' width='800' height='600'>
+		
+		<h3> v. Requisitos </h3>
+		<p> O principal objetivo do X3D é ser interoperacional, ou seja, deve funcionar
+		em todos os sistemas e em todos os navegadores. Portanto, não pode haver restrições
+		operacionais para a execução de seu código.</p>
+		<p> Para desenvolver em X3D, é necessário ter um navegador de internet com HTML5 e 
+		WebGL, para possibilitar a geração e interação com as figuras. Fora isso, para 
+		usar a linguagem é também necessário instalar as bibliotecas X3DOM e X_ite. <br>
+		A IDE X3D-Edit já atende a todos os pré-requisitos ao ser instalada. </p>
+		
+		<h2> Seção e. <span> VRML no mercado de trabalho </span></h2>
+		<hr>
+		<p> A X3D é mantida pela organização Web3D Consortium, o comprometimento do grupo 
+		é para manter a plataforma livre, funcional e competitiva. Dessa forma, o primeiro 
+		cenário profissional a ser citado é a dos desenvolvedores deste grupo, que auxiliam 
+		na implantação de funcionalidades, atualizações, criação e provavelmente a maior 
+		responsabilidade deste grupo, buscar nichos de mercado que possam se beneficiar da 
+		utilização e fornecer profissionais para eles. Os nichos beneficiados mencionados 
+		anteriormente são os principais utilizadores da linguagem e plataforma 3XD.</p>
+		<p> No site da W3C são exibidos casos de estudo baseados em aplicações reais, nesses 
+		casos podemos notar as principais vantagens e desvantagens da linguagem e avaliar se 
+		é aplicável no projeto planejado. <br>
+		Em todos os casos de estudo, um fator comum é a visualização tridimensional como meio, 
+		e não finalidade. Por exemplo, com a finalidade de obter melhor execução em cirurgias 
+		cardíacas, médicos utilizam corações impressos em 3D para planejamento pré-operatório. 
+		Esse tipo de modelagem não é novidade, porém, a disponibilidade advinda das plataformas 
+		web permitem a criação e manipulação em diferentes máquinas, sistemas e navegadores, 
+		poupando a equipe médica de mais gastos com equipamentos, e até mesmo com profissionais, 
+		visto a vastidão de profissionais web capacitados a aprender modelagem em XML.</p>
+		<p> O mercado de trabalho prioriza, acima de tudo, o custo-benefício. Um produto deve 
+		ser feito no menor custo possível, com a maior qualidade e menor tempo possível. Baseado 
+		nos exemplos apresentados, é possível afirmar que a visualização tridimensional proporciona 
+		aos clientes uma prévia mais palpável e próxima do real. Seja um projeto arquitetônico, seja 
+		um órgão, um produto ou um software, ao nos depararmos com algo mais semelhante ao real, 
+		tendemos a comprar a ideia mais facilmente. Este é o ponto comum de todas as iniciativas.</p>
+			
+		<h2> Seção f. <span> Experimentos Realizados</span></h2>
+		<hr>
+		<p> Para testar a linguagem e suas vantagens, optei por tentar fazer algo que mostrasse uma 
+		utilidade prática da ferramenta. Criei algumas figuras iniciais para entender melhor o funcionamento e, 
+		em seguida, acessei os exemplos do W3C para escolher algum que fortalecesse minha explicação. 
+		Optei pelo design interativo de uma casa.<br>
+		Eu estaria mentindo se dissesse que entendi cada etapa do tutorial que reproduzi. Por muitas 
+		vezes, quase todas, tive que pesquisar o que aquele nó afetaria no código e nem sempre consegui 
+		entender. Entretanto, o exemplo exemplifica perfeitamente a praticidade e aplicabilidade do X3D 
+		para o mercado de trabalho, neste caso, para a arquitetura e correlatos. É permitido criar o modelo 
+		e ainda percorrê-lo, exibindo cada elemento do cenário, sob diferentes fontes de luz e perspectivas.
+		Ainda é possível gamificar a demonstração recebendo inputs do usuário para controlar a perspectiva.
+		Tudo por meio do X3D.</p>
+		<p> No vídeo a seguir, eu apresento após finalizado na minha máquina, o programa funcionando. 
+		Infelizmente, por falhas de software no meu computador, não fui capaz de reproduzir explicações.
+		Neste vídeo, eu controlo a câmera durante o trajeto pela casa que fiz seguindo o tutorial da W3C.
+		Existem várias perspectivas, optei por gravar a de jogo, por ser menos sujeita a bugs. </p>
+		<p> Controlo a câmera com as setas e o mouse, como um jogo de 1ª pessoa e apresento toda a casa. 
+		Poderia ter tratado melhor o chão,o céu e o cenário com o X3D, porém não consegui fazer sozinho.</p>
+		<video  width="800" height="600" controls> 
+		<source src="img\exemplo.mp4" type="video/mp4">
+		Seu browser não suporta vídeo 
+		</video>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Testimonials Section -->
+<div id="testimonials" class="text-center">
+  <div class="overlay">
+    <div class="container">
+      <div class="section-title">
+        <h2>Conclusão</h2>
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div id="testimonial" class="owl-carousel owl-theme">
+            <div class="item">
+              <p> A realidade virtual se apresenta como forte inovação na indústria do entretenimento, 
+			  porém, históricos nos mostram que diversas áreas, muitas vezes nem mesmo da área de TI, 
+			  possuem aplicações extremamente eficientes para este mecanismo. A visualização e interação 
+			  é universal e presente em todos os lugares, portanto a sua implantação e utilização também 
+			  deve ser. O VRML começou como um sonho, uma aproximação da ficção científica. Hoje, seu 
+			  sucessor cada vez mais aproxima a ficção da realidade, conforme defendido neste trabalho. 
+			  Esta deve ser a motivação de todo cientista da computação: Tornar o surreal <b>possível</b>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer Section -->
+<div id="footer">
+  <div class="container text-center">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="social">
+        <h3> Bibliografia </h3>
+		<ul>
+          <li><a href="http://www.web3d.org/x3d/what-x3d">Web3D Consortium</a></li>
+          <li><a href="http://hcilab.uniud.it/let-web3d/x3d-intro.pdf">Introdução ao X3D</a></li>
+          <li><a href="http://felixlup.net/international/fulbright/slides/03_Paradigms&IntroToX3D.pdf">Introdução ao X3D - Paradigmas</a></li>
+		  <li><a href="https://doc.x3dom.org/tutorials/basics/hello/index.html">X3DOM docs</a></li>
+		</ul>
+      </div>
+      <p>2018 - Instituto Federal de Educação, Ciência e Tecnologia de Brasília - IFB<br>
+	  Campus Taguatinga - Bacharelado em Ciência da Computação <br>
+	  Computação Gráfica - Profº Me. Roberto Duarte Fontes <br>
+	  Caio César Félix Caldeira</p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/nivo-lightbox.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/owl.carousel.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
